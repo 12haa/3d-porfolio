@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="md:block hidden xs:hidden md:bottom-60 lg:w-[100%] lg:h-[95%]  w-full h-full">
+      <div className="md:block hidden xs:hidden md:bottom-60 lg:w-[100%] lg:h-[81%]  ">
         <ComputersCanvas />
       </div>
 

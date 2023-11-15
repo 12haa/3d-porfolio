@@ -1,11 +1,11 @@
-import Editedthree from "../assets/Edited-three.jpg";
-import Editedtwo from "../assets/Edited-two.jpg";
-import Editedfour from "../assets/EditedFour.png";
-import NFT from "../assets/NFT.png";
-import Todo from "../assets/ToDo.png";
-import Summarize from "../assets/summarize.png";
-import Porfolio from "../assets/Porfolio_Sample.png";
-import Filmpire from "../assets/Filmpire.png";
+import Editedthree from "../assets/Edited-three.jpeg";
+import Editedtwo from "../assets/Edited-two.jpeg";
+import Editedfour from "../assets/EditedFour.jpeg";
+import NFT from "../assets/NFT.jpeg";
+import Todo from "../assets/ToDo.jpeg";
+import Summarize from "../assets/summarize.jpeg";
+import Porfolio from "../assets/Porfolio_Sample.jpeg";
+import Filmpire from "../assets/Filmpire.jpeg";
 import {
   mobile,
   backend,

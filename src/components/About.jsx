@@ -59,9 +59,9 @@ const About = () => {
         that solve real-world problems. Let's work together to bring your ideas
         to life!
         <br />
-        I'm Also Learning Next.js Right Now.
+        {/* I'm Also Learning Next.js Right Now. */}
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10    items-center justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

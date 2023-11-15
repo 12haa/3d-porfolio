@@ -12,6 +12,8 @@
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.57.3",
     "@react-three/fiber": "^8.12.0",
+    "browserslist": "^4.22.1",
+    "caniuse-lite": "^1.0.30001562",
     "framer-motion": "^10.5.0",
     "maath": "^0.5.3",
     "react": "^18.2.0",

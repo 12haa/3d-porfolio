@@ -1,8 +1,5 @@
-import React from "react";
-
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { git, github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -19,14 +16,14 @@ const ProjectCard = ({
   live_demo_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", " spring ", index * 0.5, 0.75)}>
+    <div   variants={fadeIn("up", " spring ", index * 0.1, 0.75)}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 850,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px]    w-full"
       >
         <div className="relative w-full h-[290px]">
           <img
@@ -65,7 +62,7 @@ const ProjectCard = ({
           </button>
         </a>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
@@ -87,7 +84,7 @@ const Works = () => {
         complex problems, work with different technologies, and manage projects
         effectively.
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-10   justify-center w-full  ">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

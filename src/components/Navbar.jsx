@@ -23,8 +23,8 @@ const Navbar = () => {
         >
           {/* <img src={LogoMain} alt="logo" className="w-9 h-9 object-contain" /> */}
           <p className="text-secondary text-[18px] font-bold cursor-pointer flex ">
-            Mohamad &nbsp;
-            <span className="sm:block hidden text-white">
+            Mohammad &nbsp;
+            <span className=" md:block hidden text-white">
               {" "}
               | &nbsp; Front-End Developer
             </span>
