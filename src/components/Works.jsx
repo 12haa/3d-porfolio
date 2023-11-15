@@ -5,6 +5,7 @@ import { git, github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useState } from "react";
 
 const ProjectCard = ({
   index,
@@ -16,7 +17,7 @@ const ProjectCard = ({
   live_demo_link,
 }) => {
   return (
-    <div   variants={fadeIn("up", " spring ", index * 0.1, 0.75)}>
+    <div variants={fadeIn("up", " spring ", index * 0.1, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -67,6 +68,33 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  console.log(window.innerWidth);
+  function scrollToTop() {
+    const windowWidth = window.innerWidth;
+    setShowAllProjects(!showAllProjects);
+
+    const viewHeight = window.innerHeight;
+    if (showAllProjects) {
+      if (windowWidth <= 765) {
+        window.scrollTo({
+          top: 5100,
+          behavior: "smooth",
+        });
+      } else if (windowWidth > 1000) {
+        window.scrollTo({
+          top: 4700,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: 5130,
+          behavior: "smooth",
+        });
+      }
+    }
+  }
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -85,9 +113,31 @@ const Works = () => {
         effectively.
       </div>
       <div className="mt-20 flex flex-wrap gap-10   justify-center w-full  ">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {showAllProjects
+          ? projects.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            ))
+          : projects
+              .slice(0, 3)
+              .map((project, index) => (
+                <ProjectCard
+                  key={`project-${index}`}
+                  index={index}
+                  {...project}
+                />
+              ))}
+      </div>
+      <div className="flex w-full items-center justify-center mt-8">
+        <button
+          className=" text-2 border-2 p-2   rounded-lg border-slate-600  hover:bg-black text-[#b341adfd]  "
+          onClick={() => scrollToTop()}
+        >
+          {showAllProjects ? "Show Less <-" : "Show More ->"}
+        </button>
       </div>
     </>
   );
