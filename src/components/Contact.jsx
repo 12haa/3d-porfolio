@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import { Toaster, toast } from "sonner";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -29,6 +29,9 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
+    if (form.email === null || form.name === null || form.message === null) {
+      toast.warning("Please Fill The Required Forms");
+    }
   };
 
   const handleSubmit = (e) => {
@@ -52,7 +55,13 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          if (
+            form.email !== null &&
+            form.name !== null &&
+            form.message !== null
+          ) {
+            toast.success("GREAT! i will get back to you ASAP :)<3 ");
+          }
 
           setForm({
             name: "",
@@ -63,8 +72,6 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -90,6 +97,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              required
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
@@ -102,6 +110,7 @@ const Contact = () => {
               type="email"
               name="email"
               value={form.email}
+              required
               onChange={handleChange}
               placeholder="What's your web address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -112,6 +121,7 @@ const Contact = () => {
             <textarea
               rows={7}
               name="message"
+              required
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
@@ -121,12 +131,14 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className={`bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary `}
           >
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
+
+      <Toaster richColors />
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}

@@ -21,7 +21,9 @@
     "react-parallax-tilt": "^1.7.116",
     "react-router-dom": "^6.9.0",
     "react-simple-typewriter": "^5.0.1",
+    "react-toastify": "^9.1.3",
     "react-vertical-timeline-component": "^3.6.0",
+    "sonner": "^1.2.0",
     "three": "^0.150.1"
   },
   "devDependencies": {

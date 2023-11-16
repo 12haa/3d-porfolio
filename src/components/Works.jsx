@@ -76,7 +76,7 @@ const Works = () => {
 
     const viewHeight = window.innerHeight;
     if (showAllProjects) {
-      if (windowWidth <= 765) {
+      if (windowWidth <= 765 && windowWidth >= 530) {
         window.scrollTo({
           top: 5100,
           behavior: "smooth",
@@ -86,9 +86,9 @@ const Works = () => {
           top: 4700,
           behavior: "smooth",
         });
-      } else {
+      } else if (windowWidth <= 525) {
         window.scrollTo({
-          top: 5130,
+          top: 6100,
           behavior: "smooth",
         });
       }
@@ -131,14 +131,17 @@ const Works = () => {
                 />
               ))}
       </div>
-      <div className="flex w-full items-center justify-center mt-8">
+      <motion.div
+        variants={fadeIn("up", " spring ", 2 * 0.1, 0.75)}
+        className="flex w-full items-center justify-center   h-20"
+      >
         <button
           className=" text-2 border-2 p-2   rounded-lg border-slate-600  hover:bg-black text-[#b341adfd]  "
           onClick={() => scrollToTop()}
         >
           {showAllProjects ? "Show Less <-" : "Show More ->"}
         </button>
-      </div>
+      </motion.div>
     </>
   );
 };
