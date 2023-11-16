@@ -222,9 +222,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "A Simple Netlfix Clone",
+    name: "Article Summarizer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Article Summarzier App that recives a link and summarizes the article related to the link given.",
     tags: [
       {
         name: "React",
@@ -235,14 +235,40 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Firebase",
+        name: "RapidApi ",
         color: "pink-text-gradient",
       },
     ],
-    image: Editedthree,
-    source_code_link: "https://github.com/12haa/Netflix-APP",
-    live_demo_link: "https://netflix-app-6ry8.vercel.app",
+    image: Summarize,
+    source_code_link: "https://github.com/12haa/Simple-ToDo-App",
+    live_demo_link: "https://article-summarizer-gamma.vercel.app/",
   },
+  {
+    name: "Filmpire",
+    description: "Complete movie app with search , login and category sections",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TMDB ",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux ",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Filmpire,
+    source_code_link: "https://github.com/12haa/Filmpire_MovieApp",
+    live_demo_link: "https://filmpire-movie-app.vercel.app/",
+  },
+
   {
     name: "ChaTTy",
     description:
@@ -264,6 +290,28 @@ const projects = [
     image: Editedfour,
     source_code_link: "https://github.com/12haa/Chatty",
     live_demo_link: "https://chatty-gold.vercel.app/login",
+  },
+  {
+    name: "A Simple Netlfix Clone",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Editedthree,
+    source_code_link: "https://github.com/12haa/Netflix-APP",
+    live_demo_link: "https://netflix-app-6ry8.vercel.app",
   },
   {
     name: "FitCLub",
@@ -329,28 +377,7 @@ const projects = [
     source_code_link: "https://github.com/12haa/Simple-ToDo-App",
     live_demo_link: "https://to-do-app-smoky-six.vercel.app/",
   },
-  {
-    name: "Article Summarizer",
-    description:
-      "Article Summarzier App that recives a link and summarizes the article related to the link given.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "green-text-gradient",
-      },
-      {
-        name: "RapidApi ",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Summarize,
-    source_code_link: "https://github.com/12haa/Simple-ToDo-App",
-    live_demo_link: "https://article-summarizer-gamma.vercel.app/",
-  },
+
   {
     name: "A Porfolio Sample",
     description: "A Simple Porfolio Sample",
