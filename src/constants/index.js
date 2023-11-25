@@ -273,25 +273,25 @@ const projects = [
     description: "A Social Media Called \"SnapGram\" which in users can post , like , comment and scroll to see posts and save their favorite post.",
     tags: [
       {
-        name: "React",
+        name: "Tailwind",
         color: "blue-text-gradient",
       },
       {
         name: "Appwrite",
-        color: "green-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "TypeScript" ,
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "React Query",
         color: "pink-text-gradient",
       },
     ],
-    image: Filmpire,
-    source_code_link: "https://github.com/12haa/Filmpire_MovieApp",
-    live_demo_link: "https://filmpire-movie-app.vercel.app/",
+    image: Snapgram,
+    source_code_link: "https://github.com/12haa/SnapGram",
+    live_demo_link: "https://snap-gram-chi.vercel.app/",
   },
 
   {
