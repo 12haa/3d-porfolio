@@ -122,7 +122,7 @@ const Works = () => {
               />
             ))
           : projects
-              .slice(0, 3)
+              .slice(0, 4)
               .map((project, index) => (
                 <ProjectCard
                   key={`project-${index}`}
