@@ -6,6 +6,7 @@ import Todo from "../assets/ToDo.jpeg";
 import Summarize from "../assets/summarize.jpeg";
 import Porfolio from "../assets/Porfolio_Sample.jpeg";
 import Filmpire from "../assets/Filmpire.jpeg";
+import Snapgram from "../../src/assets/SnapGram.png";
 import {
   mobile,
   backend,
@@ -261,6 +262,30 @@ const projects = [
       },
       {
         name: "Redux ",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Filmpire,
+    source_code_link: "https://github.com/12haa/Filmpire_MovieApp",
+    live_demo_link: "https://filmpire-movie-app.vercel.app/",
+  }, {
+    name: "SnapGram",
+    description: "A Social Media Called \"SnapGram\" which in users can post , like , comment and scroll to see posts and save their favorite post.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript" ,
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React Query",
         color: "pink-text-gradient",
       },
     ],
