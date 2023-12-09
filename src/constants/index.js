@@ -8,6 +8,7 @@ import Porfolio from "../assets/Porfolio_Sample.jpeg";
 import Filmpire from "../assets/Filmpire.jpeg";
 import Snapgram from "../../src/assets/SnapGram.png";
 import TaskGuru from "../../src/assets/TaskGuru.png"
+import AdminDashboard from "../../src/assets/AdminDashboard.png";
 import {
     mobile,
     backend,
@@ -339,6 +340,27 @@ const projects = [
         image: Editedfour,
         source_code_link: "https://github.com/12haa/Chatty",
         live_demo_link: "https://chatty-gold.vercel.app/login",
+    },{
+        name: "Admin Dashboard",
+        description:
+            "Fully functional admin dashboard template with multiple pages.",
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwind",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Syncfusion",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: AdminDashboard,
+        source_code_link: "https://github.com/12haa/Admin-Dashboard-SyncFusion",
+        live_demo_link: "https://admin-dashboard-sync-fusion.vercel.app/",
     },
     {
         name: "A Simple Netlfix Clone",
