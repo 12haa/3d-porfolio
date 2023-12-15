@@ -9,6 +9,7 @@ import Filmpire from "../assets/Filmpire.jpeg";
 import Snapgram from "../../src/assets/SnapGram.png";
 import TaskGuru from "../../src/assets/TaskGuru.png"
 import AdminDashboard from "../../src/assets/AdminDashboard.png";
+import YoutubeClone from "../../src/assets/YoutubeClone.png"
 import {
     mobile,
     backend,
@@ -317,6 +318,27 @@ const projects = [
         image: TaskGuru,
         source_code_link: "https://github.com/12haa/TaskGuru",
         live_demo_link: "https://task-guru-b7w3l95vi-mkhaefi2500-yahoocom.vercel.app/",
+    }, {
+        name: "Youtube Clone",
+        description:
+            "This project is a YouTube clone built using Next.js, a React framework. It replicates key features of the popular video-sharing platform, showcasing proficiency in front-end development. The application incorporates responsive design, dynamic routing, and seamless user interactions, providing a comprehensive example of Next.js capabilities. Explore the codebase to learn about modern web development .",
+        tags: [
+            {
+                name: "NextJS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwind",
+                color: "Blue-text-gradient",
+            },
+            {
+                name: "Shadcn-UI ",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: YoutubeClone,
+        source_code_link: "https://github.com/12haa/TaskGuru",
+        live_demo_link: "https://github.com/12haa/Youtube-Clone",
     },
 
     {
